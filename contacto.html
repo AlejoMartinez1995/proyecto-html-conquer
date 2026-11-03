@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Conquer Academia</title>
+  <meta name="description" content="Contacta con Conquer Academia: teléfono, email, dirección, mapa y formulario de contacto.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo-conquer.svg" alt="Logotipo de Conquer Academia" width="200" height="50"></a>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contacto</h1>
+
+    <section>
+      <h2>Datos de contacto</h2>
+      <address>
+        Conquer Academia<br>
+        Calle Gran Vía 1, 28013 Madrid<br>
+        Teléfono: <a href="tel:+34910000000">910 000 000</a><br>
+        Email: <a href="mailto:info@conquer-academia.es">info@conquer-academia.es</a>
+      </address>
+      <p>Horario: de lunes a viernes, de 9:00 a 18:00.</p>
+    </section>
+
+    <section>
+      <h2>Dónde estamos</h2>
+      <iframe src="https://maps.google.com/maps?q=Gran%20Via%201%20Madrid&amp;output=embed" width="600" height="400" title="Mapa de la ubicación de Conquer Academia" loading="lazy"></iframe>
+    </section>
+
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </p>
+        <p>
+          <label for="asunto">Asunto</label>
+          <select id="asunto" name="asunto">
+            <option value="informacion">Información sobre cursos</option>
+            <option value="matricula">Matrícula</option>
+            <option value="otro">Otro</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>¿Cómo prefieres que te contactemos?</legend>
+          <input type="radio" id="por-email" name="preferencia" value="email" checked>
+          <label for="por-email">Email</label>
+          <input type="radio" id="por-telefono" name="preferencia" value="telefono">
+          <label for="por-telefono">Teléfono</label>
+        </fieldset>
+        <p>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" cols="40" required></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">He leído y acepto el <a href="aviso-legal.html">aviso legal</a></label>
+        </p>
+        <p><button type="submit">Enviar</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Conquer Academia. Todos los derechos reservados.</p>
+    <p><a href="aviso-legal.html">Aviso legal</a></p>
+  </footer>
+</body>
+</html>

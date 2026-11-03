@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Conquer Academia</title>
+  <meta name="description" content="Crea tu cuenta en Conquer Academia para apuntarte a nuestros cursos de programación.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo-conquer.svg" alt="Logotipo de Conquer Academia" width="200" height="50"></a>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Registro</h1>
+    <p>Rellena el formulario para crear tu cuenta.</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <p>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+        <p>
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Perfil</legend>
+        <p>
+          <label for="web">Página web</label>
+          <input type="url" id="web" name="web" placeholder="https://">
+        </p>
+        <p>
+          <label for="foto">Foto</label>
+          <input type="file" id="foto" name="foto" accept="image/*">
+        </p>
+        <p>
+          <label for="biografia">Biografía</label>
+          <textarea id="biografia" name="biografia" rows="5" cols="40"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">Acepto el <a href="aviso-legal.html">aviso legal</a></label>
+      </p>
+      <p><button type="submit">Registrarme</button></p>
+    </form>
+    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Conquer Academia. Todos los derechos reservados.</p>
+    <p><a href="aviso-legal.html">Aviso legal</a></p>
+  </footer>
+</body>
+</html>
